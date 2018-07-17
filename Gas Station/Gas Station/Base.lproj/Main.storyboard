@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gas_Station" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refuel" translatesAutoresizingMaskIntoConstraints="NO" id="hzS-0F-ySX">
+                                <rect key="frame" x="67" y="52" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ÁLCOOL OU GASOLINA?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fza-fR-R2X">
+                                <rect key="frame" x="49" y="195" width="289" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.045642919838428497" green="0.006480746902525425" blue="0.011540699750185013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Álcool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urv-7R-zuf">
+                                <rect key="frame" x="38" y="308" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço Gasolina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDV-ER-ODt">
+                                <rect key="frame" x="234" y="308" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 2.80" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jhn-kr-OSK">
+                                <rect key="frame" x="38" y="337" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 4.20" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lf5-DI-KDt">
+                                <rect key="frame" x="234" y="337" width="104" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqe-Yh-Fm5">
+                                <rect key="frame" x="146" y="400" width="82" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CALCULAR">
+                                    <color key="titleColor" red="0.93725490196078431" green="0.47058823529411764" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcular:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZRc-Nb-Ba4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLa-6k-xzy">
+                                <rect key="frame" x="187" y="443" width="0.0" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="kHC-90-7oo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite os preços utilizando ponto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFw-V0-0ww">
+                                <rect key="frame" x="68" y="245" width="239" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zLa-6k-xzy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5bu-PX-vJt"/>
+                            <constraint firstItem="Fza-fR-R2X" firstAttribute="top" secondItem="hzS-0F-ySX" secondAttribute="bottom" constant="15" id="8RQ-tV-CnH"/>
+                            <constraint firstItem="urv-7R-zuf" firstAttribute="baseline" secondItem="KDV-ER-ODt" secondAttribute="baseline" id="8md-99-f1M"/>
+                            <constraint firstItem="Jhn-kr-OSK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="DGq-Mk-OkJ"/>
+                            <constraint firstItem="hzS-0F-ySX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="DTS-iO-OOM"/>
+                            <constraint firstItem="urv-7R-zuf" firstAttribute="trailing" secondItem="Jhn-kr-OSK" secondAttribute="trailing" id="GBb-ry-oZO"/>
+                            <constraint firstItem="zLa-6k-xzy" firstAttribute="top" secondItem="cqe-Yh-Fm5" secondAttribute="bottom" constant="13" id="Gej-65-V6L"/>
+                            <constraint firstAttribute="trailing" secondItem="KDV-ER-ODt" secondAttribute="trailing" constant="26" id="GvP-L3-T87"/>
+                            <constraint firstItem="KDV-ER-ODt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="urv-7R-zuf" secondAttribute="trailing" constant="8" symbolic="YES" id="JGr-JW-t7i"/>
+                            <constraint firstItem="Fza-fR-R2X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="195" id="JXN-qZ-llS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zLa-6k-xzy" secondAttribute="trailing" id="Jvq-Sb-a6f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fza-fR-R2X" secondAttribute="trailing" constant="37" id="Om9-Fx-U28"/>
+                            <constraint firstItem="bFw-V0-0ww" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="S0K-1l-MKt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hzS-0F-ySX" secondAttribute="trailing" constant="68" id="Tob-1q-PO1"/>
+                            <constraint firstItem="Fza-fR-R2X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="UdH-jg-ZZE"/>
+                            <constraint firstItem="zLa-6k-xzy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V9C-jh-xuP"/>
+                            <constraint firstItem="zLa-6k-xzy" firstAttribute="centerX" secondItem="cqe-Yh-Fm5" secondAttribute="centerX" id="VLS-9l-Ty8"/>
+                            <constraint firstItem="lf5-DI-KDt" firstAttribute="baseline" secondItem="Jhn-kr-OSK" secondAttribute="baseline" id="Vey-ru-DAy"/>
+                            <constraint firstItem="urv-7R-zuf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="YPk-7U-bla"/>
+                            <constraint firstItem="Jhn-kr-OSK" firstAttribute="firstBaseline" secondItem="urv-7R-zuf" secondAttribute="baseline" constant="32" id="aCv-gI-Lh0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bFw-V0-0ww" secondAttribute="trailing" constant="68" id="d5b-RN-K3b"/>
+                            <constraint firstItem="lf5-DI-KDt" firstAttribute="leading" secondItem="KDV-ER-ODt" secondAttribute="leading" id="dRd-tf-Scz"/>
+                            <constraint firstItem="lf5-DI-KDt" firstAttribute="trailing" secondItem="Fza-fR-R2X" secondAttribute="trailing" id="dUW-wF-Rhq"/>
+                            <constraint firstItem="Jhn-kr-OSK" firstAttribute="top" secondItem="urv-7R-zuf" secondAttribute="bottom" constant="8" symbolic="YES" id="j1W-5K-nWO"/>
+                            <constraint firstItem="cqe-Yh-Fm5" firstAttribute="top" secondItem="Fza-fR-R2X" secondAttribute="bottom" constant="173" id="jph-PS-SxJ"/>
+                            <constraint firstItem="lf5-DI-KDt" firstAttribute="top" secondItem="KDV-ER-ODt" secondAttribute="bottom" constant="8" id="kuh-aO-Xun"/>
+                            <constraint firstItem="bFw-V0-0ww" firstAttribute="top" secondItem="Fza-fR-R2X" secondAttribute="bottom" constant="18" id="p4H-Id-DMM"/>
+                            <constraint firstItem="urv-7R-zuf" firstAttribute="top" secondItem="Fza-fR-R2X" secondAttribute="bottom" constant="81" id="sTA-hR-pu8"/>
+                            <constraint firstItem="urv-7R-zuf" firstAttribute="leading" secondItem="Jhn-kr-OSK" secondAttribute="leading" id="vRA-Vu-dZY"/>
+                            <constraint firstItem="hzS-0F-ySX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="yXV-9y-o3n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="priceEtanol" destination="Jhn-kr-OSK" id="vQR-Zg-LWw"/>
+                        <outlet property="priceGasolina" destination="lf5-DI-KDt" id="Ugk-EV-ffI"/>
+                        <outlet property="resultado" destination="zLa-6k-xzy" id="13b-tY-xDk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="refuel" width="256" height="256"/>
+    </resources>
+</document>
